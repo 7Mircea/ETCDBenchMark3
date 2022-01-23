@@ -1,0 +1,15 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName='benchmark.Benchmark'
+
+repositories {
+	mavenCentral()
+	google()
+}
+
+dependencies{
+	implementation 'io.etcd:jetcd-core:0.5.11'
+	// https://mvnrepository.com/artifact/org.slf4j/slf4j-api
+	implementation 'org.slf4j:slf4j-jdk14:1.7.30'
+} 
